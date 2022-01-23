@@ -27,6 +27,11 @@ public class User implements Serializable {
 
     private Integer status;
 
+    public interface Status {
+        int LOCKED = 0;
+        int VALID = 1;
+    }
+
     @TableField(value = "create_time")
     private Date createTime;
 
